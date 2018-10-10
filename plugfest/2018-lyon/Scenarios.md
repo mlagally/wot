@@ -1,3 +1,30 @@
+# Tentative list of devices and applications:
+
+- OCF integration, speech, camera, binary lights, RGB lights (Intel)
+- Zigbee, MQTT, CoAP devices (Smart Things)
+- Semantic Search, Thing directory, Festo plant (Siemens)
+- NodeRED app (Hitachi)
+- Home devices (Panasonic)
+
+
+# Demo planning
+
+Targeting a remote demo, but need a fallback to local scenario if we hit network issues.
+
+Targeting to show all 3 demos during the Wednesday meeting.
+Fallback via simulators, local thing directories.
+
+## home scenario demo (remote)
+
+Home demo based on Panasonic's devices, industrial demo using Festo plant.
+
+## industrial demo (remote)
+
+## Local fallback: Motion/button activates light, camera or speech output (Node RED orchestrating devices from Intel + Smart Things
+
+Thing directory search, orchestrate devices from Smart Things and Intel.
+MQTT and CoAP interworking (Intel+Smart Things)
+
 # Scenarios
 
 The following scenarios validate the interoperability of devices across different manufactuers.
@@ -18,12 +45,14 @@ a survceillence camera is turned on.
 ### Device interactions
 - Monitor room occupancy (KETI Sensor)  
 - Detect when room is empty and trigger the following actions (Oracle)
-- Close window blinds (Fujitu)
+- Close window blinds (Fujitsu)
 - Clean the room (Panasonic)
 - Turn on a MQTT device (Siemens)
 - Turn off the lights (Smart Things)
 - Turn on a surveillance camera (Intel)
 - Control other devices (Hitachi)
+
+
 
 ## Industrial integration scenarios
 
