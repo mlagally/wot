@@ -10,6 +10,11 @@
 | Oracle  | IoT Cloud Service | Wifi | Application t.b.d. |
 | Siemens  | Industry Automation | Wifi / Lan | Application t.b.d. |
 |  Siemens | Building Automation | Wifi / Lan | Application t.b.d. |
+| TU Munich | robots, sensors, lights | LAN, 1 Power plug | |
+| Intel | OCF endpoints, bridge, gateway, Smart home, Solar power management system (t.b.d.), Object recognition via AI, Speech output, Camera | Wifi/LAN, 1 Power plug | |
+| Fujitsu | Cloud platform, gateway, sensors, Smart Home in Japan | Wifi, Power | |
+| Panasonic | Smart home lab Osaka | Wifi, ? Power  | |
+| Hitachi | node-red based tool for orchestration scenario - Application t.b.d. | Wifi, Power | |
 
 # Scenarios
 
@@ -21,8 +26,8 @@ Scenario: Automatically turn off devices when user leaves the room
 
 ### Description:
 An environment sensor is capable of identifying when a room is empty by measuring the oxygen level.
-When the "room empty" condition is detected.
-the room is cleaned by a vacuum cleaner,  lights are turned off, window blinds are closed and a surveillence camera is turned on.
+When the "room empty" condition is detected
+the room is cleaned by a vacuum cleaner, lights are turned off, window blinds are closed and a surveillance camera is turned on.
 
 ### Device interactions
 
@@ -45,14 +50,26 @@ pubish alert messages and make voice announcements.
 environment sensor - cloud service  
 ...
 
+## Orchestrator combining a couple of endpoint devices
+e.g. motion sensor triggering a light, orchestration could come from a different company
+Brown field integration/describing an existing closed source device (e.g. Philips Hue, OCF, ...)
+
+## Energy management in a smart building/smart city
+Load sheding / load management: Solar Panel with a battery and a variable load (e.g. a light or a fan) - 
+lower the light when certain conditions apply, e.g. bad weather.
+Perhaps also have a connected power meter.
+Consider simulated systems and physical devices.
+
+
 ## Additional Scenarios: 
 
 ### Enterprise integration scenarios
 Ex: Access control and security system
-Ex: Energy management in a smart building/smart city
+
 ### Transportation scenarios
 Ex: Fleet management
 Ex: Shipping and inventory control (supply chain management)
+
 
 
 # Logistics
@@ -84,5 +101,5 @@ Please place all tools into the tools directory.
    - \<t.b.d.\>
 
 # Documentation
-
+- Links to additional information relevant for the demo.
 * 
